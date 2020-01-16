@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#95b8ce</item>
+        <item name="colorPrimaryDark">#395b6f</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="customEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:color">#FFFFFF</item>
+    </style>
+
+</resources>

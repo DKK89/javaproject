@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JavaProject</string>
+    <string name="welcome_account_login">If you have an account, please input ID and Password to log in. If you don\'t have an account, please create an account.</string>
+    <string name="welcome_account_create">ID should be longer than 4 letters.\nPassword should contain at least one number.</string>
+</resources>

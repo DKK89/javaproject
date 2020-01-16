@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="login"
+            type="team.everywhere.javaproject.views.LoginFragment" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/background_gradient">
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="35dp"
+            android:lineSpacingExtra="12.5sp"
+            android:text="@string/welcome_account_login"
+            android:textColor="#ffffff"
+            android:textSize="12.5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/semi_transparent_edittext"
+            android:hint="ID"
+            android:imeOptions="actionNext|flagNoExtractUi"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:textColorHint="#FFFFFF"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabel" />
+
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/semi_transparent_edittext"
+            android:hint="Password"
+            android:imeOptions="actionDone|flagNoExtractUi"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:textColorHint="#FFFFFF"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etId" />
+
+        <View
+            android:id="@+id/viewCheckRememberTouch"
+            android:layout_width="52.5dp"
+            android:layout_height="42.5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+        <View
+            android:id="@+id/viewCheckRemember"
+            android:layout_width="22.5dp"
+            android:layout_height="22.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ellipse_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+        <CheckBox
+            android:id="@+id/btnCheckRemember"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/background_checkbox"
+            android:button="@null"
+            android:checked="false"
+            android:scaleX="0.6"
+            android:scaleY="0.5"
+            app:layout_constraintBottom_toBottomOf="@+id/viewCheckRemember"
+            app:layout_constraintEnd_toEndOf="@+id/viewCheckRemember"
+            app:layout_constraintStart_toStartOf="@+id/viewCheckRemember"
+            app:layout_constraintTop_toTopOf="@+id/viewCheckRemember" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10.8dp"
+            android:lineSpacingExtra="7.5sp"
+            android:text="Remember me"
+            android:textColor="#ffffff"
+            android:textSize="12.5sp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewCheckRemember"
+            app:layout_constraintStart_toEndOf="@+id/viewCheckRemember"
+            app:layout_constraintTop_toTopOf="@+id/viewCheckRemember" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="22.5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background_border"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCheckRemember" />
+
+        <TextView
+            android:id="@+id/tvResetPW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="7.5sp"
+            android:text="Reset Password"
+            android:textColor="#ffffff"
+            android:textSize="12.5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvResetPW"
+            app:layout_constraintEnd_toEndOf="@+id/tvResetPW"
+            app:layout_constraintStart_toStartOf="@+id/tvResetPW"
+            app:layout_constraintTop_toTopOf="@+id/tvResetPW" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26.5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background_border"
+            android:text="Create an account"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvResetPW" />
+
+        <TextView
+            android:id="@+id/tvInstructorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15.2dp"
+            android:lineSpacingExtra="7.5sp"
+            android:text="Login instructions"
+            android:textColor="#ffffff"
+            android:textSize="12.5sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+
+        <Button
+            android:id="@+id/btnShowInstructorDetail"
+            android:layout_width="16dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/arrow_down"
+            app:layout_constraintBottom_toBottomOf="@+id/tvInstructorLabel"
+            app:layout_constraintStart_toEndOf="@+id/tvInstructorLabel"
+            app:layout_constraintTop_toTopOf="@+id/tvInstructorLabel" />
+
+        <View
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnShowInstructorDetail"
+            app:layout_constraintEnd_toEndOf="@+id/btnShowInstructorDetail"
+            app:layout_constraintStart_toStartOf="@+id/btnShowInstructorDetail"
+            app:layout_constraintTop_toTopOf="@+id/btnShowInstructorDetail" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clProviderText"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_provider_text"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvInstructorLabel"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/tvProviderText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:lineSpacingExtra="7.5sp"
+                android:text="1. Put your ID on the ID View \n2. Put your Password on the Password View \n3. Enjoy your Application :D "
+                android:textColor="#ffffff"
+                android:textColorLink="#FFFFFF"
+                android:textSize="12.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

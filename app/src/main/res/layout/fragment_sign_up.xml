@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_gradient">
+
+            <TextView
+                android:id="@+id/tvLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="35dp"
+                android:lineSpacingExtra="12.5sp"
+                android:text="@string/welcome_account_create"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txtID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="30dp"
+                android:text="ID"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabel" />
+
+            <EditText
+                android:id="@+id/etID"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/semi_transparent_edittext"
+                android:hint="ID"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#55FFFFFF"
+                android:textSize="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtID" />
+
+            <TextView
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:text="Password"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etID" />
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/semi_transparent_edittext"
+                android:hint="Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#55FFFFFF"
+                android:textSize="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+            <TextView
+                android:id="@+id/txtPasswordConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:text="Password Confirm"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+
+            <EditText
+                android:id="@+id/etPasswordConfirm"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/semi_transparent_edittext"
+                android:hint="Password Confirm"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#55FFFFFF"
+                android:textSize="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPasswordConfirm" />
+
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:text="Name"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPasswordConfirm" />
+
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/semi_transparent_edittext"
+                android:hint="Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#55FFFFFF"
+                android:textSize="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:text="Email"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/semi_transparent_edittext"
+                android:hint="E-mail"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:paddingStart="15dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#55FFFFFF"
+                android:textSize="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+            <TextView
+                android:id="@+id/txtAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:text="Age : "
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+            <TextView
+                android:id="@+id/tvAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="24"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/txtAge"
+                app:layout_constraintStart_toEndOf="@+id/txtAge" />
+
+            <SeekBar
+                android:id="@+id/sbAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:max="30"
+                android:min="20"
+                android:progress="24"
+                android:progressBackgroundTint="#000000"
+                android:progressTint="#FFFFFF"
+                android:thumb="@drawable/custom_circle_thumb_white"
+                app:layout_constraintTop_toBottomOf="@+id/txtAge" />
+
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:text="Gender"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sbAge" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtGender">
+
+                <RadioButton
+                    android:id="@+id/rbMan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/white"
+                    android:checked="true"
+                    android:text="남자" />
+
+                <RadioButton
+                    android:id="@+id/rbWoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/white"
+                    android:text="여자" />
+            </RadioGroup>
+
+
+            <View
+                android:id="@+id/viewAgreeAll"
+                android:layout_width="22.5dp"
+                android:layout_height="22.5dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ellipse_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+            <CheckBox
+                android:id="@+id/cbAgreeAll"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/background_checkbox"
+                android:button="@null"
+                android:scaleX="0.6"
+                android:scaleY="0.5"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewAgreeAll"
+                app:layout_constraintEnd_toEndOf="@+id/viewAgreeAll"
+                app:layout_constraintStart_toStartOf="@+id/viewAgreeAll"
+                app:layout_constraintTop_toTopOf="@+id/viewAgreeAll" />
+
+            <TextView
+                android:id="@+id/txtAgreeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="전체 동의"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewAgreeAll"
+                app:layout_constraintStart_toEndOf="@+id/viewAgreeAll"
+                app:layout_constraintTop_toTopOf="@+id/viewAgreeAll"
+                app:layout_constraintVertical_bias="0.3" />
+
+
+            <View
+                android:id="@+id/viewPrivacy"
+                android:layout_width="22.5dp"
+                android:layout_height="22.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipse_1"
+                app:layout_constraintStart_toStartOf="@+id/viewAgreeAll"
+                app:layout_constraintTop_toBottomOf="@+id/viewAgreeAll" />
+
+            <CheckBox
+                android:id="@+id/cbPrivacy"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/background_checkbox"
+                android:button="@null"
+                android:checked="true"
+                android:scaleX="0.6"
+                android:scaleY="0.5"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewPrivacy"
+                app:layout_constraintEnd_toEndOf="@+id/viewPrivacy"
+                app:layout_constraintStart_toStartOf="@+id/viewPrivacy"
+                app:layout_constraintTop_toTopOf="@+id/viewPrivacy" />
+
+            <TextView
+                android:id="@+id/txtPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="개인정보 처리방침 동의"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewPrivacy"
+                app:layout_constraintStart_toEndOf="@+id/viewPrivacy"
+                app:layout_constraintTop_toTopOf="@+id/viewPrivacy"
+                app:layout_constraintVertical_bias="0.3" />
+
+            <TextView
+                android:id="@+id/tvReadPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="자세히"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtPrivacy" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvReadPrivacy"
+                app:layout_constraintEnd_toEndOf="@+id/tvReadPrivacy"
+                app:layout_constraintStart_toStartOf="@+id/tvReadPrivacy"
+                app:layout_constraintTop_toTopOf="@+id/tvReadPrivacy" />
+
+            <View
+                android:id="@+id/viewTermsOfUse"
+                android:layout_width="22.5dp"
+                android:layout_height="22.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipse_1"
+                app:layout_constraintStart_toStartOf="@+id/viewPrivacy"
+                app:layout_constraintTop_toBottomOf="@+id/viewPrivacy" />
+
+            <CheckBox
+                android:id="@+id/cbTermsOfUse"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/background_checkbox"
+                android:button="@null"
+                android:scaleX="0.6"
+                android:scaleY="0.5"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewTermsOfUse"
+                app:layout_constraintEnd_toEndOf="@+id/viewTermsOfUse"
+                app:layout_constraintStart_toStartOf="@+id/viewTermsOfUse"
+                app:layout_constraintTop_toTopOf="@+id/viewTermsOfUse" />
+
+            <TextView
+                android:id="@+id/txtTermsOfUse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="이용약관 동의"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewTermsOfUse"
+                app:layout_constraintStart_toEndOf="@+id/viewTermsOfUse"
+                app:layout_constraintTop_toTopOf="@+id/viewTermsOfUse"
+                app:layout_constraintVertical_bias="0.3" />
+
+
+            <TextView
+                android:id="@+id/tvReadTermsOfUse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="자세히"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtTermsOfUse" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvReadTermsOfUse"
+                app:layout_constraintEnd_toEndOf="@+id/tvReadTermsOfUse"
+                app:layout_constraintStart_toStartOf="@+id/tvReadTermsOfUse"
+                app:layout_constraintTop_toTopOf="@+id/tvReadTermsOfUse" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/background_edittext"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewTermsOfUse"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/background_edittext"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/btnCancel"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

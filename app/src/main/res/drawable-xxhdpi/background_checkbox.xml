@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 체크박스 선택상태 -->
+    <item android:drawable="@drawable/done" android:state_checked="true" />
+    <!-- 체크박스 해제상태 -->
+    <item android:drawable="@android:color/transparent" android:state_checked="false" />
+    <!-- default state -->
+    <item android:drawable="@android:color/transparent" />
+</selector>
